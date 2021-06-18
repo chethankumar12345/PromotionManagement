@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromotionManagement.Shared.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromotionManagement.Business.Core", "PromotionManagement.Business.Core\PromotionManagement.Business.Core.csproj", "{25E883BE-B4E7-4315-8AD0-B38EC1FEC899}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionManagement.Interfaces", "PromotionManagement.Interfaces\PromotionManagement.Interfaces.csproj", "{6A5519F4-4DBA-4D0A-80FD-447EED469611}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromotionManagement.Interfaces", "PromotionManagement.Interfaces\PromotionManagement.Interfaces.csproj", "{6A5519F4-4DBA-4D0A-80FD-447EED469611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionManagement..Business.Implementations", "PromotionManagement..Business.Implementations\PromotionManagement..Business.Implementations.csproj", "{E6E0BB1F-C50C-4685-B3FC-6698C1F766F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromotionManagement..Business.Implementations", "PromotionManagement..Business.Implementations\PromotionManagement..Business.Implementations.csproj", "{E6E0BB1F-C50C-4685-B3FC-6698C1F766F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionMangement.Test", "PromotionMangement.Test\PromotionMangement.Test.csproj", "{DAA0A78C-370E-4207-AF03-CCDCEFDC8E89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E6E0BB1F-C50C-4685-B3FC-6698C1F766F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6E0BB1F-C50C-4685-B3FC-6698C1F766F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6E0BB1F-C50C-4685-B3FC-6698C1F766F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA0A78C-370E-4207-AF03-CCDCEFDC8E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA0A78C-370E-4207-AF03-CCDCEFDC8E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA0A78C-370E-4207-AF03-CCDCEFDC8E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA0A78C-370E-4207-AF03-CCDCEFDC8E89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
