@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromotionManagement.Busines
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionManagement.Interfaces", "PromotionManagement.Interfaces\PromotionManagement.Interfaces.csproj", "{6A5519F4-4DBA-4D0A-80FD-447EED469611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionManagement..Business.Implementations", "ProjectManagement.Business.Implementations\PromotionManagement..Business.Implementations.csproj", "{E6E0BB1F-C50C-4685-B3FC-6698C1F766F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionManagement..Business.Implementations", "PromotionManagement..Business.Implementations\PromotionManagement..Business.Implementations.csproj", "{E6E0BB1F-C50C-4685-B3FC-6698C1F766F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
