@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using PromotionManagement.Shared.Model;
-
-namespace PromotionManagement.Business.Core
+﻿namespace PromotionManagement.Shared.Model
 {
     public class PromotionCartItem
     {

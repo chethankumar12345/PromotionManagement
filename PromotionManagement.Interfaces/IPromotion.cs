@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using PromotionManagement.Shared.Model;
 
-namespace PromotionManagement.Business.Core
+namespace PromotionManagement.Interfaces
 {
     public interface IPromotion
     {

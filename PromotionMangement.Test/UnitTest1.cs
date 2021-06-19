@@ -5,6 +5,7 @@ using System.Linq;
 using PromotionManagement.Business.Core;
 using PromotionManagement.Shared.Model;
 using Moq;
+using PromotionManagement.Interfaces;
 
 namespace PromotionMangement.Test
 {

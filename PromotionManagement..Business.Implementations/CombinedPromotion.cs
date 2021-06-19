@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PromotionManagement.Business.Core;
+using PromotionManagement.Interfaces;
 using PromotionManagement.Shared.Model;
 
 namespace ProjectManagement.Business.Implementations
@@ -14,6 +15,7 @@ namespace ProjectManagement.Business.Implementations
             double price = 0;
             var numberOfSetPromotionCanApply = 0;
             bool breakLoop = false;
+
             while (true)
             {
                 foreach (var combination in pPromotion.CombinationList)

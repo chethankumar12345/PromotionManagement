@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using PromotionManagement.Interfaces;
 using PromotionManagement.Shared.Model;
 
 namespace PromotionManagement.Business.Core
@@ -13,12 +14,12 @@ namespace PromotionManagement.Business.Core
             var cartItems = new List<CartItem>();
             for (int i = 0; i < 3; i++)
             {
-                var items = pItems.Where(pCheckItem.Invoke);
+                var items = pItems.Where(pCheckItem.Invoke); 
                 foreach (var item in items)
                 {
                     if (item != null)
                     {
-                        cartItems.Add(new CartItem(item, pGetQuantity.Invoke(item)));
+                        cartItems.Add(new CartItem(item, pGetQuantity.Invoke(item))); 
                     }
                 }
             }

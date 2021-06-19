@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PromotionManagement.Business.Core;
+using PromotionManagement.Interfaces;
 using PromotionManagement.Shared.Model;
 
 namespace ProjectManagement.Business.Implementations
@@ -12,24 +13,24 @@ namespace ProjectManagement.Business.Implementations
         public double ApplyDiscount(Promotions pPromotion, List<PromotionCartItem> pItems)
         {
             double price = 0;
-            var promotionItem = pPromotion.CombinationList.First();
-            var promotionCartItem =
-                pItems.FirstOrDefault(pX => pX.Item.ItemId == promotionItem.ItemId);
-            if (promotionCartItem != null)
+            var promotion = pPromotion.CombinationList.First();
+            var cartItem =
+                pItems.FirstOrDefault(pX => pX.Item.ItemId == promotion.ItemId);
+            if (cartItem != null)
             {
-                var totalQuantityWithItem = promotionCartItem.AvailableQuantity;
-                if (totalQuantityWithItem > promotionItem.Quantity)
+                var totalQuantityWithItem = cartItem.AvailableQuantity;
+                if (totalQuantityWithItem > promotion.Quantity)
                 {
-                    int promotionAppliedItemsCount = totalQuantityWithItem / promotionItem.Quantity;
-                    price = price + promotionAppliedItemsCount * promotionItem.Quantity *
-                        pItems.First(pX => pX.Item.ItemId == promotionItem.ItemId)
+                    int promotionAppliedItemsCount = totalQuantityWithItem / promotion.Quantity;
+                    price = price + promotionAppliedItemsCount * promotion.Quantity *
+                        pItems.First(pX => pX.Item.ItemId == promotion.ItemId)
                             .Item.Price - promotionAppliedItemsCount * pPromotion.Discount;
 
-                    var promotionAppliedQuantity = promotionAppliedItemsCount * promotionItem.Quantity;
-                    promotionCartItem.AvailableQuantity =
-                        promotionCartItem.AvailableQuantity - promotionAppliedQuantity;
-                    promotionCartItem.PromotionAppliedQuantity =
-                        promotionCartItem.PromotionAppliedQuantity + promotionAppliedQuantity;
+                    var promotionAppliedQuantity = promotionAppliedItemsCount * promotion.Quantity;
+                    cartItem.AvailableQuantity =
+                        cartItem.AvailableQuantity - promotionAppliedQuantity;
+                    cartItem.PromotionAppliedQuantity =
+                        cartItem.PromotionAppliedQuantity + promotionAppliedQuantity;
                 }
             }
 
